@@ -14,7 +14,7 @@ public class Lamp {
     }
 
     public void turnOn() {
-        System.out.println("LAmp is being turned on.");
+        System.out.println("Lamp is being turned on.");
     }
 
     public LampType getStyle() {
@@ -27,5 +27,14 @@ public class Lamp {
 
     public int getGlobRating() {
         return globRating;
+    }
+
+    @Override
+    public String toString() {
+        return "Lamp{" +
+                "style=" + style +
+                ", battery=" + battery +
+                ", globRating=" + globRating +
+                '}';
     }
 }

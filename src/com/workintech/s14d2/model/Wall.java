@@ -1,13 +1,15 @@
 package com.workintech.s14d2.model;
 
-public class Wall {
-    private String direction;
+import com.workintech.s14d2.enums.Direction;
 
-    public Wall(String direction) {
+public class Wall {
+    private Direction direction;
+
+    public Wall(Direction direction) {
         this.direction = direction;
     }
 
-    public String getDirection() {
+    public Direction getDirection() {
         return direction;
     }
 
